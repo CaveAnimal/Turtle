@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+*.class
+.mvn/
+mvnw
+mvnw.cmd
+/.settings/
+.DS_Store
+models/
+data/
+indexes/

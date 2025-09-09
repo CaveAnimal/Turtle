@@ -1,0 +1,21 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
+
+turtle:
+  embedding:
+    model-path: "models/all-MiniLM-L6-v2.onnx"
+    dimension: 384
+  indexing:
+    source-directories:
+      - "./sample-code"
+    chunk-size: 512
+    overlap: 64
